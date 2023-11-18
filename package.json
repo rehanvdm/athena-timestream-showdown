@@ -1,0 +1,40 @@
+{
+  "name": "athena-timestream-showdown",
+  "version": "1.0.0",
+  "engines": {
+    "node": "~18.*",
+    "npm": "~9.*"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cdk": "cdk",
+    "diff": "cdk diff --profile systanics-prod-exported",
+    "deploy": "cdk deploy \"'**'\" --require-aproval never --profile systanics-prod-exported",
+    "test": "esr index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-athena": "^3.316.0",
+    "@aws-sdk/client-firehose": "^3.316.0",
+    "@aws-sdk/client-s3": "^3.317.0",
+    "@aws-sdk/client-timestream-query": "^3.451.0",
+    "@aws-sdk/client-timestream-write": "^3.445.0",
+    "@aws-sdk/credential-providers": "^3.451.0",
+    "@faker-js/faker": "^7.6.0",
+    "@types/node": "^18.11.18",
+    "@types/uuid": "^9.0.0",
+    "aws-cdk": "2.79.1",
+    "aws-cdk-lib": "2.79.1",
+    "constructs": "^10.0.5",
+    "esbuild": "^0.18.2",
+    "esbuild-runner": "^2.2.2",
+    "lodash": "^4.17.21",
+    "luxon": "^3.2.1",
+    "p-limit": "3.1.0",
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0",
+    "zod": "^3.22.4"
+  }
+}
